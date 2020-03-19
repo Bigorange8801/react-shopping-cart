@@ -1,4 +1,5 @@
 import React from 'react';
+import Products from './Products';
 
 const Product = props => {
 	return (
@@ -8,8 +9,9 @@ const Product = props => {
 			<h1 className="title">{props.product.title}</h1>
 
 			<p className="price">${props.product.price}</p>
+			
 
-			<button onClick={() => props.addItem(props.product)}>
+			<button onClick={() => props.addItem(Product)}>
 				Add to cart
 			</button>
 		</div>
